@@ -186,6 +186,10 @@ banner motd #
 =============================================================================== #
 
 ! VLAN Creation (VLANs 100-700, 911)
+vtp domain OMI-TEC.com
+vtp mode server
+vtp password omitec
+
 vlan 100
     name Primaria
 

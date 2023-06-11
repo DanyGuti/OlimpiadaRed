@@ -41,8 +41,10 @@ banner motd #
 =============================================================================== #
 
 ! VLAN Creation 
-vlan 300
-    name Preparatoria
+vtp domain OMI-TEC.com
+vtp mode client
+vtp password omitec
+
 
 ! Access Ports
 interface range f0/1-24

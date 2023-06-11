@@ -39,8 +39,9 @@ banner motd #
 =============================================================================== #
 
 ! VLAN Creation
-vlan 600
-    name Sala de Jueces
+vtp domain OMI-TEC.com
+vtp mode client
+vtp password omitec
 
 ! Access Ports
 interface range f0/1-24
