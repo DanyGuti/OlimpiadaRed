@@ -15,6 +15,7 @@ Instituto Tecnológico de Estudios Superiores de Monterrey, Campus Querétaro
 | :--------------------- | :-------- |
 | Carlos Salguero        | A00833341 |
 | Daniel Gutiérrez Gómez | A01068056 |
+| Alan Castillo          | A01708668 |
 
 ## Descripción del proyecto
 
