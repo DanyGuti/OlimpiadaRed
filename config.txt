@@ -143,7 +143,7 @@ ip dhcp pool Server_Pool
     dns-server 8.8.8.8
 
 ! Default Route
-ip route 0.0.0.0 0.0.0.0 g0/0/0 1 name ISP_Connection
+ip route 0.0.0.0 0.0.0.0 g0/0/0
 
 ! =================================
 ! Switch Principal (Distribution)
