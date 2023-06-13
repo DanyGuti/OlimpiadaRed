@@ -96,7 +96,7 @@ int g0/0/1
 ! Para primaria
 ip dhcp excluded-address 172.16.57.254 
 ip dhcp pool Primaria_Pool
-    network 172.16.56.0 255.255.255.0
+    network 172.16.56.0 255.255.254.0
     default-router 172.16.57.254
     dns-server 8.8.8.8
 
