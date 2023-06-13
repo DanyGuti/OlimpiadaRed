@@ -1,11 +1,11 @@
 ! ======================================================
-! Switch for Primaria
+! Switch for Primaria10
 ! Template configuration. Hostname needs to be changed.
 ! Device: Cisco 2960
 ! ======================================================
 en
 config t
-hostname SwitchPrimaria
+hostname SwitchPrim10
 no ip domain-lookup
 service password-encryption
 
@@ -55,11 +55,10 @@ interface range f0/1-24
 ! Trunk Ports
 interface g0/1
     switchport mode trunk
-    switchport trunk native vlan 911
-    switchport trunk allowed vlan 100, 911
     no shut
 
 interface vlan 911
-    ip address 172.16.61.2 255.255.255.192
+    ip address 172.16.61.18 255.255.255.192
     no shut
 ip default-gateway 172.16.61.62
+
