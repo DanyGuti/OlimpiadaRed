@@ -51,7 +51,7 @@ int g0/0/0
 int g0/0/1.100
     desc VLAN destined for Primaria
     encapsulation dot1Q 100
-    ip address 172.16.57.254 255.255.255.0
+    ip address 172.16.57.254 255.255.254.0
 
 int g0/0/1.200 
     desc VLAN destined for Secundaria
