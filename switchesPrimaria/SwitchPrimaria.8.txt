@@ -1,0 +1,64 @@
+! ======================================================
+! Switch for Primaria8
+! Template configuration. Hostname needs to be changed.
+! Device: Cisco 2960
+! ======================================================
+en
+config t
+hostname SwitchPrim8
+no ip domain-lookup
+service password-encryption
+
+! Users
+username admin privilege 15 secret admin
+username user privilege 1 secret user
+
+ip domain-name omi-tec.mx
+crypto key generate rsa general-keys modulus 2048
+
+! User access
+enable secret privilege
+
+line con 0
+    password cisco
+    login local
+    logging synchronous
+
+line vty 0 2
+    transport input ssh
+    login local
+
+! Banner
+banner motd #
+===============================================================================
+============== UNAUTHORIZED ACCESS TO THIS DEVICE IS PROHIBITED ===============
+===============================================================================
+| This device is restricted to authorized users for authorized purposes only. |
+| Unauthorized access is prohibited and is subject to prosecution to the full |
+| extent of the law. All activities performed on this device are logged and   |
+| monitored. By accessing this device you agree that your actions may be      |
+| monitored if unauthorized usage is suspected.                               |
+=============================================================================== #
+
+! VLAN Creation
+vtp domain OMI-TEC.com
+vtp mode client
+vtp password omitec
+
+
+! Access Ports
+interface range f0/1-24
+    switchport mode access
+    switchport access vlan 100
+    no shut
+
+! Trunk Ports
+interface g0/1
+    switchport mode trunk
+    no shut
+
+interface vlan 911
+    ip address 172.16.61.16 255.255.255.192
+    no shut
+ip default-gateway 172.16.61.62
+
