@@ -56,9 +56,11 @@ interface range f0/1-24
 interface g0/1
     switchport mode trunk
     switchport trunk native vlan 911
-    switchport trunk allowed vlan 200, 911
+    switchport trunk allowed vlan 200,911
     no shut
 
 interface vlan 911
-    ip address 172.16.61.2 255.255.255.192
+    ip address 172.16.61.3 255.255.255.192
     no shut
+
+ip default-gateway 172.16.61.62
