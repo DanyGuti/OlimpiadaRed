@@ -81,7 +81,7 @@ int g0/0/1.600
 int g0/0/1.700 
     desc VLAN destined for Sala de Server
     encapsulation dot1Q 700
-    ip address 172.16.61.130 255.255.255.254
+    ip address 172.16.61.130 255.255.255.252
 
 int g0/0/1.911 
     desc VLAN destined for Gestion
@@ -138,7 +138,7 @@ ip dhcp pool Jueces_Pool
 ! Para sala de server
 ip dhcp excluded-address 172.16.61.130
 ip dhcp pool Server_Pool
-    network 172.16.61.128 255.255.255.254
+    network 172.16.61.128 255.255.255.252
     default-router 172.16.61.130
     dns-server 8.8.8.8
 
