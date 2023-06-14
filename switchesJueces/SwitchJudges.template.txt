@@ -53,7 +53,7 @@ interface range f0/1-24
 interface g0/1
     switchport mode trunk
     switchport trunk native vlan 911
-    switchport trunk allowed vlan 600, 911
+    switchport trunk allowed vlan 600,911
     no shut
 
 interface vlan 911

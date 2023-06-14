@@ -93,14 +93,14 @@ interface range f0/3-4
 interface range f0/7-8
     desc Interface for VLAN Coaches 
     switchport mode trunk
-    switchport trunk allowed vlan 500
+    switchport trunk allowed vlan 400
     no shut
 
 ! Judges Assigned main switch ports (f0/9-10)
 interface range f0/9-10
     desc Interface for VLAN Press
     switchport mode trunk
-    switchport trunk allowed vlan 400
+    switchport trunk allowed vlan 500
     no shut
 
 ! Coaches Assigned main switch ports (f0/11-12)
