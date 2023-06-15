@@ -43,6 +43,7 @@ vtp domain OMI-TEC.com
 vtp mode server
 vtp password omitec
 
+
 vlan 100
     name Primaria
 
@@ -72,49 +73,42 @@ vlan 911
 interface range f0/1-2
     desc Interface for VLAN Elementary
     switchport mode trunk
-    switchport trunk allowed vlan 100
     no shut
 
 ! Middle Assigned main switch ports (f0/5-6)
 interface range f0/5-6
     desc Interface for VLAN Junior High School
     switchport mode trunk
-    switchport trunk allowed vlan 200
     no shut
 
 ! High Assigned main switch ports (f0/3-4)
 interface range f0/3-4
     description Interface for VLAN High School
     switchport mode trunk
-    switchport trunk allowed vlan 300
     no shutdown
 
 ! Press Assigned main switch ports (f0/7-8)
 interface range f0/7-8
     desc Interface for VLAN Coaches 
     switchport mode trunk
-    switchport trunk allowed vlan 400
     no shut
 
 ! Judges Assigned main switch ports (f0/9-10)
 interface range f0/9-10
     desc Interface for VLAN Press
     switchport mode trunk
-    switchport trunk allowed vlan 500
     no shut
 
 ! Coaches Assigned main switch ports (f0/11-12)
 interface range f0/11-12
     desc Interface for VLAN Judges
     switchport mode trunk
-    switchport trunk allowed vlan 600
     no shut
 
 ! JServer Assigned main switch ports (f0/13-14)
 interface range f0/13-14
     desc Interface for VLAN Server
     switchport mode access
-    switchport access vlan 700
     no shut
 
 ! Trunk Ports
@@ -126,7 +120,7 @@ interface g0/1
 
 interface vlan 911
     desc Interface Remote Management
-    ip address 172.16.61.1
+    ip address 172.16.61.1 255.255.255.192
     no shut
 
 ip default-gateway 172.16.61.62
