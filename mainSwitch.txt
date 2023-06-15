@@ -87,7 +87,7 @@ interface range f0/3-4
     description Interface for VLAN High School
     switchport mode trunk
     switchport trunk allowed vlan 300
-    no shutdown
+    no shut
 
 ! Press Assigned main switch ports (f0/7-8)
 interface range f0/7-8

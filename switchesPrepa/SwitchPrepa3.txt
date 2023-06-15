@@ -4,7 +4,7 @@
 ! ======================================================
 en
 config t
-hostname SwitchPreparatoria
+hostname SwitchPreparatoria3
 no ip domain-lookup
 service password-encryption
 

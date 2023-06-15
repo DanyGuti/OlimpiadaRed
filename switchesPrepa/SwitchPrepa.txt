@@ -47,14 +47,13 @@ vtp password omitec
 ! Access Ports
 interface range f0/1-24
     switchport mode trunk
-    switchport trunk vlan 300
     no shut
 
 ! Trunk Ports
 interface g0/1
     switchport mode trunk
     switchport trunk native vlan 911
-    switchport trunk allowed vlan 100,911
+    switchport trunk allowed vlan 300,911
     no shut
 
 interface vlan 911
