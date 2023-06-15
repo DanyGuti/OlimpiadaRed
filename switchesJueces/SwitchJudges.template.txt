@@ -4,7 +4,7 @@
 ! =========================
 en
 config t
-hostname SwitchPreparatoria
+hostname SwitchJueces
 no ip domain-lookup
 
 ! Users
