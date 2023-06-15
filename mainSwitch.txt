@@ -43,6 +43,7 @@ vtp domain OMI-TEC.com
 vtp mode server
 vtp password omitec
 
+
 vlan 100
     name Primaria
 
@@ -72,7 +73,7 @@ vlan 911
 interface range f0/1-2
     desc Interface for VLAN Elementary
     switchport mode trunk
-    no shut
+
 
 ! High Assigned main switch ports (f0/3-4)
 interface range f0/3-4
