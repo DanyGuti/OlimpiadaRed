@@ -59,4 +59,4 @@ interface vlan 911
     no shut
 
 ! Dfault Gateway
-ip default-gateway 172.16.61.62
+ip default-gateway 172.16.60.254

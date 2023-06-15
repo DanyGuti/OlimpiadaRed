@@ -60,4 +60,4 @@ interface vlan 911
     ip address 172.16.61.4 255.255.255.192
     no shut
 
-ip default-gateway 172.16.61.62
+ip default-gateway 172.16.59.254
