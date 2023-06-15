@@ -61,7 +61,7 @@ int g0/0/1.200
 int g0/0/1.300
     desc VLAN destined for Preparatoria
     encapsulation dot1Q 300
-    ip address 172.16.59.254 255.255.254.0
+    ip address 172.16.59.254 255.255.255.0
 
 int g0/0/1.400 
     desc VLAN destined for Sala de Coaches
@@ -110,7 +110,7 @@ ip dhcp pool Secundaria_Pool
 ! Para preparatoria
 ip dhcp excluded-address 172.16.59.254
 ip dhcp pool Preparatoria_Pool
-    network 172.16.59.0 255.255.254.0
+    network 172.16.59.0 255.255.255.0
     default-router 172.16.59.254
     dns-server 8.8.8.8
 
