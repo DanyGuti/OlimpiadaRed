@@ -54,8 +54,6 @@ interface range f0/1-24
 ! Trunk Ports
 interface g0/1
     switchport mode trunk
-    switchport trunk native vlan 911
-    switchport trunk allowed vlan 200,911
     no shut
 
 interface vlan 911
