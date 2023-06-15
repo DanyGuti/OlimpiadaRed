@@ -64,17 +64,17 @@ int g0/0/1.300
     ip address 172.16.59.254 255.255.255.0
 
 int g0/0/1.400 
-    desc VLAN destined for Sala de Coaches
+    desc VLAN destined for Sala_de_Coaches
     encapsulation dot1Q 400
     ip address 172.16.60.126 255.255.255.128
 
 int g0/0/1.500 
-    desc VLAN destined for Sala de Prensa
+    desc VLAN destined for Sala_de_Prensa
     encapsulation dot1Q 500
     ip address 172.16.60.254 255.255.255.128
 
 int g0/0/1.600 
-    desc VLAN destined for Sala de Jueces
+    desc VLAN destined for Sala_de_Jueces
     encapsulation dot1Q 600
     ip address 172.16.61.126 255.255.255.192
 

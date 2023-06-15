@@ -6,7 +6,6 @@ en
 config t
 hostname SwitchPrensa
 no ip domain-lookup
-service password-encryption
 
 ! Users
 username admin privilege 15 secret admin
