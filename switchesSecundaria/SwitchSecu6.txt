@@ -1,5 +1,5 @@
 ! ======================================================
-! Switch for Preparatoria
+! Switch for Secundaria
 ! Template configuration. Hostname needs to be changed.
 ! Device: Cisco 2960
 ! ======================================================
@@ -61,4 +61,4 @@ interface vlan 911
     ip address 172.16.61.25 255.255.255.192
     no shut
 
-ip default-gateway 172.16.61.62
+ip default-gateway 172.16.58.254

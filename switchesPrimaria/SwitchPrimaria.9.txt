@@ -60,5 +60,5 @@ interface g0/1
 interface vlan 911
     ip address 172.16.61.17 255.255.255.192
     no shut
-ip default-gateway 172.16.61.62
+ip default-gateway 172.16.57.254
 
