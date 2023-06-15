@@ -47,7 +47,7 @@ vtp password omitec
 
 
 ! Access Ports
-interface range f0/1-24
+interface range f0/1-11
     switchport mode trunk
     no shut
 
