@@ -85,7 +85,7 @@ int g0/0/1.700
 
 int g0/0/1.911 
     desc VLAN destined for Gestion
-    encapsulation dot1Q 600
+    encapsulation dot1Q 911
     ip address 172.16.61.62 255.255.255.192
 
 int g0/0/1
