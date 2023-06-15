@@ -6,7 +6,6 @@ en
 config t
 hostname SwitchPrensa
 no ip domain-lookup
-service password-encryption
 
 ! Users
 username admin privilege 15 secret admin
@@ -53,8 +52,6 @@ interface range f0/1-24
 ! Trunk Ports
 interface range g0/1
     switchport mode trunk
-    switchport trunk native vlan 911
-    switchport trunk allowed vlan 500,911
     no shut
 
 interface vlan 911
